@@ -168,9 +168,6 @@ export const investment = {
     detail: "inclui servidor/hospedagem + suporte técnico",
     grace: "cobrança começa 3 meses após a finalização do sistema",
   },
-  externalCosts: [
-    { name: "WhatsApp Business API", detail: "para os alertas automáticos", range: "~R$ 80–150/mês" },
-  ],
   options: [
     {
       key: "fases",
