@@ -85,13 +85,11 @@ export const scopeIncluded = [
   "Cadastro de paciente e caso com histórico completo",
   "Etapas de tratamento configuráveis por tipo (Templates)",
   "Controle protético com fluxo de laboratório e comanda digital",
-  "Alertas e ocorrências com gravidade obrigatória",
   "Alinhamentos entre gestão e doutor por caso",
   "Agenda por unidade e por dentista",
   "Painel gerencial com funil de tratamento e retrabalho",
   "Relatórios exportáveis em CSV",
   "Controle de acesso por perfil (Dentista, Auxiliar, Recepção, Gestão)",
-  "Arquitetura multi-unidade (Volta Redonda, Barra Mansa e futuras unidades)",
 ];
 
 export const scopeExcluded = [
