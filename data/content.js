@@ -50,12 +50,6 @@ export const modules = [
     benefit: "Rastreabilidade do caso até a instalação",
   },
   {
-    name: "Alertas & Ocorrências",
-    description: "Gravidade e status de resolução deixam de ficar em branco.",
-    features: ["Campos obrigatórios", "Follow-up automático de paciente sem agendamento"],
-    benefit: "Nenhum caso urgente se perde na planilha",
-  },
-  {
     name: "Alinhamentos Gestão-Doutor",
     description: "Anotação da gestão sobre um caso, com controle de visibilidade.",
     features: ["Lembrete interno (oculto)", "Visível na ficha do doutor quando necessário"],
@@ -84,12 +78,6 @@ export const modules = [
     description: "Cada perfil vê exatamente o que precisa.",
     features: ["Dentista/Auxiliar: só os próprios pacientes", "Recepção/Gestão: toda a unidade"],
     benefit: "Privacidade entre profissionais, sem perder visão de gestão",
-  },
-  {
-    name: "Multi-unidade",
-    description: "Volta Redonda, Barra Mansa e futuras unidades.",
-    features: ["Dados isolados entre unidades", "Mesmo login de gestão"],
-    benefit: "Estrutura pronta para crescer sem retrabalho técnico",
   },
 ];
 
