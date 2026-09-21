@@ -15,7 +15,7 @@ export default function FinalCTA() {
             Uma nova estrutura para a gestão da OralSin
           </h2>
           <p className="mx-auto mt-4 max-w-lg text-sm text-white/80">
-            Definir a opção comercial, assinar o escopo da Fase 1 e começar pelo que já resolve o
+            Definir a forma de pagamento, assinar o escopo da Fase 1 e começar pelo que já resolve o
             problema mais crítico: cadastro e acompanhamento de caso.
           </p>
           <a

@@ -111,7 +111,6 @@ export const phases = [
     number: "01",
     name: "Fundação",
     duration: "18 dias úteis",
-    price: "R$ 5.500",
     items: [
       "Login multi-unidade + controle por perfil",
       "Cadastro de Paciente",
@@ -125,7 +124,6 @@ export const phases = [
     number: "02",
     name: "Protético",
     duration: "+14 dias úteis",
-    price: "R$ 4.500",
     items: [
       "Trabalho protético",
       "Fluxo com laboratório",
@@ -137,7 +135,6 @@ export const phases = [
     number: "03",
     name: "Alertas",
     duration: "+16 dias úteis",
-    price: "R$ 5.000",
     items: [
       "Ocorrências com gravidade obrigatória",
       "Alinhamentos gestão-doutor (visível/oculto)",
@@ -149,7 +146,6 @@ export const phases = [
     number: "04",
     name: "Gerencial",
     duration: "+13 dias úteis",
-    price: "R$ 4.000",
     items: [
       "Painel gerencial cross-unidade",
       "Funil de tratamento",
@@ -162,7 +158,7 @@ export const phases = [
 
 export const investment = {
   totalDays: "~61 dias úteis (~3 meses)",
-  totalPrice: "R$ 19.000",
+  intro: "Desenvolvimento completo do sistema — 4 fases, ~61 dias úteis — com o código pertencendo à OralSin.",
   support: {
     price: "R$ 299/mês",
     detail: "inclui servidor/hospedagem + suporte técnico",
@@ -170,41 +166,31 @@ export const investment = {
   },
   options: [
     {
-      key: "fases",
-      title: "Projeto por fase",
-      subtitle: "Código do cliente",
-      description: "A OralSin contrata o desenvolvimento e é proprietária total do código.",
+      key: "avista",
+      title: "À vista",
+      subtitle: "Pagamento único",
+      description: "Pagamento integral do projeto em uma única parcela.",
       highlight: "R$ 19.000",
-      highlightLabel: "investimento total · 4 fases",
-      terms: [
-        "Fase 1: 50% na assinatura + 50% na entrega",
-        "Fases 2 a 4: 30% entrada + parcelas mensais durante o desenvolvimento",
-      ],
-      recommended: true,
+      highlightLabel: "investimento total",
+      terms: [],
     },
     {
-      key: "mensalidade",
-      title: "Mensalidade de desenvolvimento",
-      subtitle: "Fluxo de caixa previsível",
-      description: "Investimento mensal fixo durante o desenvolvimento; manutenção incluída.",
-      highlight: "R$ 6.000/mês",
-      highlightLabel: "durante ~3 meses + taxa de início de R$ 1.000",
-      terms: ["Inclui desenvolvimento contínuo das 4 fases, suporte e acompanhamento", "Total estimado: R$ 19.000"],
-    },
-    {
-      key: "parceria",
-      title: "Parceria estratégica",
-      subtitle: "Equity + licenciamento",
-      description:
-        "A OralSin co-financia o desenvolvimento e se torna co-proprietária do produto, com receita futura via licenciamento para outras clínicas.",
-      highlight: "R$ 10.000",
-      highlightLabel: "Fases 1 + 2 · 30% de co-propriedade",
-      terms: [
-        "Co-propriedade e receita de licenciamento: 30% OralSin · 70% Linkeed (ajustável)",
-        "Fases 3 e 4 negociadas conforme evolução e licenciamentos",
-      ],
+      key: "parcelado",
+      title: "Entrada + 3 parcelas",
+      subtitle: "Parcelado",
+      description: "30% de entrada e o restante parcelado em 3x.",
+      highlight: "R$ 5.700",
+      highlightLabel: "de entrada (30%)",
+      terms: ["Restante de R$ 13.300 em 3 parcelas de ~R$ 4.433", "Total do projeto: R$ 19.000"],
     },
   ],
+  bonus: {
+    label: "Brinde no fechamento",
+    title: "Alertas no WhatsApp",
+    description:
+      "Ao fechar o projeto, a OralSin ganha alertas automáticos no WhatsApp, enviados para a gestora ou para um grupo.",
+    items: ["Alertas de relatórios", "Alertas de casos críticos"],
+  },
 };
 
 export const faq = [
@@ -227,10 +213,6 @@ export const faq = [
   {
     q: "O que está incluso na mensalidade de R$ 299?",
     a: "Servidor/hospedagem e suporte técnico da plataforma. Não cobre desenvolvimento de feature nova — evoluções contínuas depois da Fase 4 são negociadas como um novo pacote. A cobrança só começa 3 meses após a entrega final do sistema.",
-  },
-  {
-    q: "É possível contratar só a Fase 1 para validar antes?",
-    a: "Sim. Cada fase se sustenta e entrega valor por si só — a plataforma foi desenhada exatamente para permitir começar pela Fase 1 (R$ 5.500 / 18 dias) antes de comprometer o restante.",
   },
   {
     q: "O sistema pode evoluir depois das 4 fases?",

@@ -34,9 +34,6 @@ export default function ImplementationTimeline() {
                     </li>
                   ))}
                 </ul>
-                <p className="mt-auto pt-5 font-display text-xl font-medium text-[var(--ink-strong)] tabular-nums">
-                  {p.price}
-                </p>
               </div>
             </Reveal>
           ))}
