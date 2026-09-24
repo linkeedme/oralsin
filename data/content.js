@@ -39,8 +39,8 @@ export const modules = [
   },
   {
     name: "Etapas de Tratamento",
-    description: "Fluxo configurável por tipo de tratamento (Templates).",
-    features: ["Sequência e duração por tipo", "Contador automático de repetição"],
+    description: "Fluxo configurável por tipo de tratamento (Templates) — incluindo cirurgia e carga imediata.",
+    features: ["Sequência e duração por tipo", "Contador automático de repetição", "Protocolos de cirurgia e carga imediata"],
     benefit: "Retrabalho visível onde ele realmente acontece",
   },
   {
@@ -48,6 +48,12 @@ export const modules = [
     description: "Trabalho vinculado ao caso, com fluxo de laboratório.",
     features: ["Laboratório interno ou terceirizado", "Comanda digital com confirmação"],
     benefit: "Rastreabilidade do caso até a instalação",
+  },
+  {
+    name: "Estoque",
+    description: "Controle de materiais e insumos da clínica.",
+    features: ["Entradas e saídas de materiais", "Vínculo com consumo do paciente — a definir com a gestão"],
+    benefit: "Visibilidade de estoque sem planilha paralela",
   },
   {
     name: "Alinhamentos Gestão-Doutor",
@@ -83,8 +89,9 @@ export const modules = [
 
 export const scopeIncluded = [
   "Cadastro de paciente e caso com histórico completo",
-  "Etapas de tratamento configuráveis por tipo (Templates)",
+  "Etapas de tratamento configuráveis por tipo (Templates), incluindo cirurgia e carga imediata",
   "Controle protético com fluxo de laboratório e comanda digital",
+  "Controle de estoque de materiais e insumos",
   "Alinhamentos entre gestão e doutor por caso",
   "Agenda por unidade e por dentista",
   "Painel gerencial com funil de tratamento e retrabalho",
@@ -95,6 +102,7 @@ export const scopeIncluded = [
 export const scopeExcluded = [
   "Controle financeiro completo (cobrança, parcelas, boletos)",
   "O sistema entra apenas com um status simples — em dia / pendente / pausado — por caso",
+  "Vínculo automático entre estoque e consumo por paciente — a definir com a gestão na fase de kickoff",
 ];
 
 export const flow = [
@@ -217,6 +225,14 @@ export const faq = [
   {
     q: "O sistema pode evoluir depois das 4 fases?",
     a: "Sim. A base já nasce multi-unidade e multi-tenant, preparada para crescer. Novas evoluções são estruturadas conforme necessidade e escopo futuro — não fazem parte automática deste contrato.",
+  },
+  {
+    q: "O sistema cobre pacientes de cirurgia e carga imediata?",
+    a: "Sim. Os Templates de tratamento são configuráveis por tipo, incluindo protocolos de cirurgia e carga imediata — não ficam restritos a prótese.",
+  },
+  {
+    q: "O sistema controla estoque?",
+    a: "Sim, controle de entradas e saídas de materiais e insumos. O vínculo automático entre estoque e consumo por paciente é opcional e fica para ser definido com a gestão na reunião de kick-off.",
   },
 ];
 
